@@ -21,10 +21,19 @@
 
   <style>
     body { font-family: 'Inter', sans-serif; }
+
     .text-gradient {
       background: linear-gradient(90deg,#6366f1,#a855f7,#ec4899);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+
+    .bg-hero {
+      background:
+        radial-gradient(circle at 20% 20%, rgba(99,102,241,0.35), transparent 40%),
+        radial-gradient(circle at 80% 30%, rgba(168,85,247,0.35), transparent 40%),
+        radial-gradient(circle at 50% 80%, rgba(236,72,153,0.35), transparent 40%),
+        linear-gradient(135deg,#0f172a,#1e1b4b,#312e81);
     }
   </style>
 </head>
@@ -40,67 +49,104 @@
 </nav>
 
 <!-- HERO -->
-<section class="hero min-h-screen flex items-center bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 text-white">
+<section class="hero min-h-screen flex items-center bg-hero text-white">
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
     <!-- Text -->
     <div>
       <h1 class="hero-title text-5xl md:text-6xl font-black leading-tight mb-6">
-        Building Africa’s <br/>
-        <span class="text-yellow-300">Next-Gen Tech Infrastructure</span>
+        Engineering <span class="text-yellow-300">Africa’s Digital Future</span>
       </h1>
 
       <p class="hero-sub text-xl mb-8 opacity-90">
-        I’m Tersugh Emmanuel Nzorov — software engineer, founder, and ecosystem builder
-        creating scalable AI-powered systems for Africa and the world.
+        I’m Tersugh Emmanuel Nzorov — a software engineer, founder, and system builder
+        focused on scalable AI-powered platforms, identity infrastructure, and
+        enterprise software.
       </p>
 
-      <div class="hero-btns flex gap-6">
+      <div class="hero-btns flex flex-wrap gap-6 mb-8">
         <a href="#ecosystem" class="px-8 py-3 bg-white text-gray-900 rounded-xl font-semibold shadow">
           Explore My Work
         </a>
         <a href="#contact" class="px-8 py-3 border border-white rounded-xl">
-          Let’s Talk
+          Work With Me
         </a>
+      </div>
+
+      <!-- Socials -->
+      <div class="flex gap-6 text-sm opacity-90">
+        <a href="https://github.com/ezy-devs" target="_blank" class="hover:text-yellow-300">GitHub</a>
+        <a href="#" class="hover:text-yellow-300">LinkedIn</a>
+        <a href="#" class="hover:text-yellow-300">Twitter / X</a>
       </div>
     </div>
 
     <!-- Image -->
     <div class="hero-img">
       <img src="images/profile.jpg"
-        class="rounded-3xl shadow-2xl object-cover w-full h-[420px]" />
+        class="rounded-3xl shadow-2xl object-cover w-full h-[460px]" />
     </div>
   </div>
 </section>
 
-<!-- TRUST / FOCUS -->
-<section class="py-20 bg-gray-100 dark:bg-gray-800">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-12 text-gradient">Focus Areas</h2>
+<!-- SKILLS -->
+<section class="py-24 bg-gray-100 dark:bg-gray-800">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold mb-16 text-center text-gradient">
+      Skills & Expertise
+    </h2>
 
-    <div class="grid md:grid-cols-4 gap-8">
-      <div class="section-item p-6 rounded-2xl bg-white dark:bg-gray-900 shadow">AI & SaaS</div>
-      <div class="section-item p-6 rounded-2xl bg-white dark:bg-gray-900 shadow">Identity Systems</div>
-      <div class="section-item p-6 rounded-2xl bg-white dark:bg-gray-900 shadow">Fintech Infrastructure</div>
-      <div class="section-item p-6 rounded-2xl bg-white dark:bg-gray-900 shadow">Enterprise Software</div>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="section-item p-8 bg-white dark:bg-gray-900 rounded-2xl shadow">
+        <h3 class="font-bold text-xl mb-4">Engineering</h3>
+        <ul class="space-y-2 opacity-80">
+          <li>Backend Development (Django, APIs)</li>
+          <li>Frontend (Tailwind, JS)</li>
+          <li>System Architecture</li>
+          <li>Database Design</li>
+        </ul>
+      </div>
+
+      <div class="section-item p-8 bg-white dark:bg-gray-900 rounded-2xl shadow">
+        <h3 class="font-bold text-xl mb-4">AI & Automation</h3>
+        <ul class="space-y-2 opacity-80">
+          <li>AI Chatbots & Assistants</li>
+          <li>Workflow Automation</li>
+          <li>AI SaaS Products</li>
+          <li>OCR & Identity Tech</li>
+        </ul>
+      </div>
+
+      <div class="section-item p-8 bg-white dark:bg-gray-900 rounded-2xl shadow">
+        <h3 class="font-bold text-xl mb-4">Leadership</h3>
+        <ul class="space-y-2 opacity-80">
+          <li>Startup & Product Strategy</li>
+          <li>Technical Leadership</li>
+          <li>Team Building</li>
+          <li>Vision & Execution</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- IMPACT -->
+<!-- JOURNEY -->
 <section class="py-24">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-center">
-    <div class="section-item">
-      <h3 class="text-5xl font-black text-gradient">10+</h3>
-      <p class="mt-2">Products & Platforms</p>
-    </div>
-    <div class="section-item">
-      <h3 class="text-5xl font-black text-gradient">3+</h3>
-      <p class="mt-2">Years of Engineering Growth</p>
-    </div>
-    <div class="section-item">
-      <h3 class="text-5xl font-black text-gradient">Africa-Focused</h3>
-      <p class="mt-2">Mission-Driven Innovation</p>
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-4xl font-bold mb-16 text-center text-gradient">
+      Founder Journey
+    </h2>
+
+    <div class="space-y-8">
+      <div class="section-item p-6 rounded-2xl bg-gray-100 dark:bg-gray-800">
+        <strong>2022</strong> — Began software development journey.
+      </div>
+      <div class="section-item p-6 rounded-2xl bg-gray-100 dark:bg-gray-800">
+        <strong>2024</strong> — Founded Ezydevs Technologies.
+      </div>
+      <div class="section-item p-6 rounded-2xl bg-gray-100 dark:bg-gray-800">
+        <strong>2025</strong> — Building AI & identity infrastructure products.
+      </div>
     </div>
   </div>
 </section>
@@ -113,40 +159,27 @@
     </h2>
 
     <div class="grid md:grid-cols-3 gap-10">
-      <div class="section-item rounded-2xl bg-white dark:bg-gray-900 p-8 shadow">
+      <div class="section-item p-8 rounded-2xl bg-white dark:bg-gray-900 shadow">
         <h3 class="text-xl font-bold mb-2">KaziAI</h3>
-        <p>AI-powered business management for African SMEs.</p>
+        <p>AI-powered business automation platform for African SMEs.</p>
       </div>
-
-      <div class="section-item rounded-2xl bg-white dark:bg-gray-900 p-8 shadow">
+      <div class="section-item p-8 rounded-2xl bg-white dark:bg-gray-900 shadow">
         <h3 class="text-xl font-bold mb-2">LumiID</h3>
-        <p>Identity verification, KYC & digital trust infrastructure.</p>
+        <p>Digital identity & verification infrastructure.</p>
       </div>
-
-      <div class="section-item rounded-2xl bg-white dark:bg-gray-900 p-8 shadow">
+      <div class="section-item p-8 rounded-2xl bg-white dark:bg-gray-900 shadow">
         <h3 class="text-xl font-bold mb-2">SwiftCart</h3>
-        <p>Scalable Django-based commerce platform.</p>
+        <p>Scalable e-commerce platform built with Django.</p>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- PHILOSOPHY -->
-<section class="py-24">
-  <div class="max-w-4xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-6 text-gradient">My Philosophy</h2>
-    <p class="text-xl leading-relaxed opacity-80">
-      “Technology should not only scale businesses — it should
-      empower people, unlock economies, and build trust at scale.”
-    </p>
   </div>
 </section>
 
 <!-- CTA -->
 <section id="contact" class="py-24 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white">
   <div class="max-w-3xl mx-auto px-6 text-center">
-    <h2 class="text-4xl font-black mb-4">Let’s Build the Future</h2>
-    <p class="mb-8">Open to partnerships, startups & ambitious ideas.</p>
+    <h2 class="text-4xl font-black mb-4">Let’s Build Something Impactful</h2>
+    <p class="mb-8">Open to partnerships, startups & ambitious collaborations.</p>
     <a href="mailto:nzorovemmanuel@gmail.com"
       class="px-10 py-4 bg-white text-gray-900 rounded-xl font-semibold shadow-lg">
       Contact Me
@@ -154,8 +187,15 @@
   </div>
 </section>
 
-<footer class="py-6 bg-gray-900 text-center text-gray-400">
-  © 2025 Tersugh Emmanuel Nzorov
+<footer class="py-10 bg-gray-900 text-gray-400">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-6">
+    <p>© 2025 Tersugh Emmanuel Nzorov</p>
+    <div class="flex gap-6">
+      <a href="https://github.com/ezy-devs">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter/X</a>
+    </div>
+  </div>
 </footer>
 
 <!-- GSAP -->
@@ -185,4 +225,4 @@
 </script>
 
 </body>
-  </html>
+</html>
